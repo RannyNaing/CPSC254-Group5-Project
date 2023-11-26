@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Movie App</title>
-  </head>
-  <body>
-    <header>
-      <h1 class="title">Movie App</h1>
-      <form id="form">
-        <input type="text" id="search" class="search" placeholder="Search">
-      </form>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />"
+        <title>Movie App</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-title">
+                <div><a href="#" id="moviesTitle"><h1>Movies</h1></a></div>
+                <div><a href="#" id="tvShowsTitle" class="header-link"><h1>TV Shows</h1></a></div>
+            </div>
+            <form id="form">
+                <input type="text" id="search" class="search" placeholder="Search">
+            </form>
+        </header>
+        
+        <main id="main">  
+        </main>
 
-    <main id="main"></main>
+        <div id="pagination">
+            <button id="prevButton">Previous</button>
+            <button id="nextButton">Next</button>
+        </div>
 
-    <script src="script.js"></script>
-  </body>
+        <footer>
+            <h2>Created by</h2>
+            <h3>Ranny Khant Naing</h3>
+            <h3>Kaung Khant Thaw</h3>
+            <h3>Chence Shi</h3>
+            <h3>Matthew Villanueva</h3>
+        </footer>
+        
+
+        <script src="script.js"></script>
+    </body>
 </html>

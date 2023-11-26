@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200,400&display=swap');
+
+:root{
+    --primary-color: rgb(14, 0, 103);
+    --secondary-color: #5e00ea;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between; /* This will push the title to the left and the form to the right */
+    align-items: center; /* This will vertically align the items in the center */
+    background-color: var(--secondary-color);
+}
+
+.header-title{
+    display: flex;
+}
+
+.header-title h1{
+    color: white; /* Assuming you want the title text to be white */
+    margin: 0 1rem; /* This removes any default margin from the h1 element */
+    font-size: 2rem; /* Adjust the size as needed */
+    cursor: pointer;
+}
+
+footer{
+    padding: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--secondary-color);
+}
+
+footer h2{
+    color: azure;
+    margin-right: 200px;
+}
+
+footer h3{
+    color: white;
+    margin-right: 100px;
+}
+
+.search{
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: black;
+}
+
+.search::placeholder{
+    color: #d6d8fd;
+}
+
+.search:focus{
+    outline: none;
+    background-color: whitesmoke;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    width: 300px;
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.movie img{
+    width: 100%
+}
+
+.movie-info {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3{
+    margin-top: 0;
+}
+
+.movie-info span{
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green{
+    color: lightgreen;
+}
+
+.movie-info span.orange{
+    color: yellow;
+}
+
+.movie-info span.red{
+    color: red;
+}
+
+.overview{
+    background-color: white;
+    padding: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+}
+
+.movie-title-color h1{
+    color: #E50914; /* Red color for movies, change as you like */
+}
+
+/* Class for the TV show title color */
+.tvshow-title-color h1{
+    color: #6EC1E4; /* Blue color for TV shows, change as you like */
+}
+
+#pagination {
+    text-align: center;
+    padding: 20px;
+}
+
+#nextButton, #prevButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#nextButton:hover, #prevButton:hover {
+    background-color: darken(var(--secondary-color), 10%);
+}
