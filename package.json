@@ -1,0 +1,15 @@
+{
+  "name": "cpsc254-group5-project",
+  "version": "1.0.0",
+  "description": "Group Members:\r 1. Ranny Khant Naing\r 2. Kaung Khant Thaw\r 3. Chence Shi\r 4. Matthew Villanueva",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.5"
+  }
+}
